@@ -495,4 +495,141 @@ math.pi	Returns PI (3.1415...)
 
 math.tau	Returns tau (6.2831...)
 
+# ARRAY
+## 🛒 1. Supermarket Shopping System
 
+A supermarket stores daily sales amounts in a list:
+
+[12000, 8500, 4300, 15000, 9800, 6000]
+
+Tasks:
+
+Display all sales amounts using a loop.
+
+Find and display sales greater than 10,000.
+
+Count how many days had sales below 7,000.
+
+Find the highest and lowest sale.
+
+Display only even sales amounts.
+
+# Tuples
+A tuple is an ordered, immutable collection of items. Once created, you cannot change its contents.
+Creating tuples:
+python# Empty tuple
+empty_tuple = ()
+
+# Tuple with items
+coordinates = (10, 20)
+colors = ("red", "green", "blue")
+
+# Single item tuple (note the comma!)
+single = (42,)
+
+# Without parentheses
+point = 10, 20, 30
+Key characteristics:
+
+Immutable - cannot add, remove, or change items
+Ordered - items maintain their position
+Allow duplicates
+Can contain mixed data types
+
+Common operations:
+pythonmy_tuple = (1, 2, 3, 4, 5)
+
+# Accessing items
+print(my_tuple[0])        # 1
+print(my_tuple[-1])       # 5
+
+# Slicing
+print(my_tuple[1:3])      # (2, 3)
+
+# Length
+print(len(my_tuple))      # 5
+
+# Unpacking
+x, y, z = (10, 20, 30)
+
+# Count and index
+numbers = (1, 2, 2, 3, 2)
+print(numbers.count(2))   # 3
+print(numbers.index(3))   # 3
+Dictionaries
+A dictionary is an unordered collection of key-value pairs. It's mutable and very useful for storing related data.
+Creating dictionaries:
+python# Empty dictionary
+empty_dict = {}
+
+# Dictionary with items
+person = {
+    "name": "Alice",
+    "age": 30,
+    "city": "New York"
+}
+
+# Using dict()
+another = dict(name="Bob", age=25)
+Common operations:
+pythonstudent = {"name": "John", "grade": 85, "major": "CS"}
+
+# Accessing values
+print(student["name"])           # John
+print(student.get("age", 0))     # 0 (default if key doesn't exist)
+
+# Adding/modifying
+student["age"] = 20              # Add new key
+student["grade"] = 90            # Modify existing
+
+# Removing
+del student["major"]             # Delete key
+grade = student.pop("grade")     # Remove and return value
+
+# Checking keys
+if "name" in student:
+    print("Name exists")
+
+# Getting all keys, values, items
+print(student.keys())            # dict_keys(['name', 'age'])
+print(student.values())          # dict_values(['John', 20])
+print(student.items())           # dict_items([('name', 'John'), ('age', 20)])
+
+# Looping
+for key, value in student.items():
+    print(f"{key}: {value}")
+
+## Practice Exercises
+## Easy Exercises
+Exercise 1: Create a tuple with your favorite 5 movies and print the first and last movie.
+
+Exercise 2: Create a dictionary representing a book with keys: title, author, year, pages. Print all the information.
+
+Exercise 3: Given the tuple numbers = (10, 20, 30, 40, 50), unpack it into 5 separate variables and print them.
+Medium Exercises
+
+Exercise 4: Write a program that counts how many times each word appears in a sentence using a dictionary.
+pythonsentence = "hello world hello python world"
+# Expected output: {'hello': 2, 'world': 2, 'python': 1}
+
+Exercise 5: Create a dictionary of student grades. Calculate and print the average grade.
+pythongrades = {"Alice": 85, "Bob": 92, "Charlie": 78, "Diana": 95}
+
+Exercise 6: Given a list of tuples representing coordinates, find the point closest to the origin (0, 0).
+pythonpoints = [(3, 4), (1, 1), (5, 12), (2, 2)]
+# Hint: Use distance formula: sqrt(x² + y²)
+Challenging Exercises
+Exercise 7: Create a phone book program with a dictionary. It should allow users to:
+
+Add a contact (name and phone number)
+Search for a contact by name
+Delete a contact
+Display all contacts
+
+Exercise 8: You have a list of tuples with (name, score). Create a dictionary where keys are score ranges ("90-100", "80-89", etc.) and values are lists of names in that range.
+pythonstudents = [("Alice", 95), ("Bob", 82), ("Charlie", 78), ("Diana", 91)]
+Exercise 9: Create a nested dictionary representing a library catalog with books organized by genre. Each book should have: title, author, and year. Write functions to:
+
+Add a book to a genre
+Search for books by author
+List all books in a specific genre
