@@ -1,0 +1,173 @@
+# Python Functions Course
+
+## 📘 Overview
+This course provides a complete, structured path to mastering Python functions — from the fundamentals to advanced concepts like decorators, recursion, and generators. It is designed for learners who want practical, real‑world skills and hands‑on exercises.
+
+---
+
+## 🧩 Module 1: Python Functions Basics
+### Topics
+- What is a function?
+- Why functions matter
+- Function syntax
+- Return values
+
+### Example
+```python
+def greet():
+    print("Hello!")
+```
+
+### Exercises
+- Create a function that prints your name.
+- Create a function that returns the square of a number.
+
+---
+
+## 🧩 Module 2: Python Arguments
+### Topics
+- Positional arguments
+- Keyword arguments
+- Default arguments
+
+### Example
+```python
+def power(base, exp=2):
+    return base ** exp
+```
+
+### Exercises
+- Write a function with default parameters.
+- Mix positional and keyword arguments.
+
+---
+
+## 🧩 Module 3: *args and **kwargs
+### Topics
+- Variable positional arguments (`*args`)
+- Variable keyword arguments (`**kwargs`)
+
+### Example
+```python
+def total(*nums):
+    return sum(nums)
+```
+
+### Exercises
+- Create a function that accepts unlimited numbers and returns the maximum.
+- Create a function that prints user profile info using **kwargs.
+
+---
+
+## 🧩 Module 4: Python Scope
+### Topics
+- Local scope
+- Global scope
+- The `global` keyword
+
+### Example
+```python
+x = 10
+
+def show():
+    x = 5
+    print(x)
+```
+
+### Exercises
+- Demonstrate local vs global scope.
+- Modify a global variable inside a function.
+
+---
+
+## 🧩 Module 5: Python Decorators
+### Topics
+- What is a decorator?
+- How decorators modify behavior
+- Writing custom decorators
+
+### Example
+```python
+def logger(func):
+    def wrapper():
+        print("Running...")
+        func()
+    return wrapper
+
+@logger
+def greet():
+    print("Hello!")
+```
+
+### Exercises
+- Create a decorator that measures execution time.
+- Create a decorator that checks user permissions.
+
+---
+
+## 🧩 Module 6: Python Lambda Functions
+### Topics
+- Anonymous functions
+- Lambdas with `map`, `filter`, `reduce`
+
+### Example
+```python
+square = lambda x: x * x
+```
+
+### Exercises
+- Use lambda to sort a list of tuples.
+- Use filter + lambda to extract even numbers.
+
+---
+
+## 🧩 Module 7: Python Recursion
+### Topics
+- What is recursion?
+- Base cases
+- Recursive patterns
+
+### Example
+```python
+def factorial(n):
+    if n == 1:
+        return 1
+    return n * factorial(n-1)
+```
+
+### Exercises
+- Write a recursive Fibonacci function.
+- Write a recursive sum of digits function.
+
+---
+
+## 🧩 Module 8: Python Generators
+### Topics
+- The `yield` keyword
+- Lazy evaluation
+- Generator expressions
+
+### Example
+```python
+def countdown(n):
+    while n > 0:
+        yield n
+        n -= 1
+```
+
+### Exercises
+- Create a generator for even numbers.
+- Create a generator that reads a file line by line.
+
+---
+
+## 🧩 Module 9: Code Challenges
+### Challenges
+- Build a calculator using functions
+- Build a student management system using *args/**kwargs
+- Build a custom iterator using generators
+
+---
+
+## 🎓 Final Notes
+This course equips you with the essential tools to write clean, modular, and efficient Python code. Practice each module thoroughly and complete the challenges to solidify your understanding
