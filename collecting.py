@@ -27,3 +27,8 @@ for sum in sums:
     total += sum
 average = total/n
 print(f"the average is : {average}")
+phonebook = {}
+phonebook["name"]= "king"
+phonebook["phone_number"] ="9384278794832"
+del phonebook["name"]
+print(phonebook)

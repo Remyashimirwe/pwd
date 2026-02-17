@@ -633,3 +633,9 @@ Exercise 9: Create a nested dictionary representing a library catalog with books
 Add a book to a genre
 Search for books by author
 List all books in a specific genre
+## task
+Add a new student named "Sarah" with age 15, grade 82, and books ["Biology", "Geography"]. Print the total number of students.
+Print only the names of all students using a for loop.
+Find and print the name of the student with the highest grade.
+Count how many students have a grade above 85.
+Print all books from all students (without duplicates).
