@@ -171,3 +171,11 @@ def countdown(n):
 
 ## 🎓 Final Notes
 This course equips you with the essential tools to write clean, modular, and efficient Python code. Practice each module thoroughly and complete the challenges to solidify your understanding
+# 1. Sum all numbers
+Write a function total(*args) that returns the sum of all passed numbers.
+total(1, 2, 3)     → 6
+total(10, 20)      → 30
+
+## Multiply all
+Write a function multiply(*args) that returns the product of all numbers.
+multiply(2, 3, 4)  → 24
