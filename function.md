@@ -179,3 +179,27 @@ total(10, 20)      → 30
 ## Multiply all
 Write a function multiply(*args) that returns the product of all numbers.
 multiply(2, 3, 4)  → 24
+## About iterator
+Create a tuple called mytuple with the values "apple", "banana", "cherry"
+
+Create a variable myit and use iter() on the tuple
+
+Print the first item using next()
+
+
+### correction 
+You are working on a data‑analytics script for a company that processes thousands of sensor readings from different devices. Each device may send data in different formats, and the processing steps may vary depending on the device type.
+You need to build a flexible processing system that:
+• 	Accepts any number of processing functions using 
+• 	Accepts optional configuration settings using 
+• 	Uses an iterator to process the sensor readings one at a time, instead of loading everything into memory
+
+❓ The Question
+Write a Python function called  that:
+1. 	Accepts a list of sensor readings.
+2. 	Accepts any number of processing functions using .
+3. 	Accepts optional configuration settings using  (e.g., , ).
+4. 	Returns an iterator that yields processed readings one by one.
+5. 	Applies each processing function to every reading in order.
+6. 	If , stop iteration and raise an exception when a processing function fails.
+7. 	If , skip the faulty reading and continue.
