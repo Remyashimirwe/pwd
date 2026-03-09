@@ -24,22 +24,5 @@ it = iter(my_list)
 print(next(it))
 print(next(it))
 print(next(it))
-#print(next(it))
-class Counter:
-    def __init__(self, start, end):
-        self.current = start
-        self.end = end
-
-    def __iter__(self):
-        return self
-
-    def __next__(self):
-        if self.current <= self.end:
-            value = self.current
-            self.current += 1
-            return value
-        else:
-            raise StopIteration
-
-for num in Counter(1, 5):
-    print(num)
+print(next(it))
+print("hey")
