@@ -21,15 +21,15 @@ def process_numbers(nums):
         if n >10: 
             greater_than_10.append(n)
     lambda_sum = reduce(lambda a, b: a+b , nums)
-
-    return {
+    dict ={
         "even":even,
         "odd": odd,
         "squares": squares,
         "greater_than_10": greater_than_10,
         "iterator_first_three": iterator_first_three,
         "lambda_sum": lambda_sum
-    }   
+    } 
+    return dict["greater_than_10"]  
 nums = [21,20,30,405,60,80,97]
 print(process_numbers(nums)) 
 

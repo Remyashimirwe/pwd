@@ -10,4 +10,6 @@ print(students["age"])
 students["price"] = 1000
 students["age"] = 17
 print(students)
-
+worda = "remy"
+upp = worda.upper()
+print(upp)
