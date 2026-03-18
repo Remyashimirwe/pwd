@@ -77,3 +77,18 @@ print(dir(mymath))
 
 ## **Bonus Question**  
 **True or False:** A module can only contain one function or object.  
+Create a class Car with:
+## Task
+A class property company_name
+
+Instance properties: brand, model, price_per_day, is_available
+
+Tasks:
+
+Create two car objects
+
+Create a method rent_car() that changes availability
+
+Create a method return_car()
+
+Print the company name using one object
