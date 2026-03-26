@@ -5,5 +5,5 @@ def changecase(func):
 @changecase
 def myfuction(nam):
     return "hello " + nam
-nam = input("please ente the name: ")
+name = input("please enter the name: ")
 print(myfuction(nam))
